@@ -6,27 +6,27 @@ Funcionalidade: Tela de login
     Para visualizar meus pedidos
 
     Contexto:
-    Dado que eu acesse a página de autenticação do portal EBAC
+    Dado que acesse a página de autenticação do portal EBAC
 
     Cenário: Autenticação válida
-    Quando eu digitar o usuário "lucasosses.qa@gmail.com"
+    Quando digitar o usuário "lucasosses.qa@gmail.com"
     E a senha "lucas123"
-    Então devo ser direcionado para a tela de checkout
+    Então o sistema deve direcionar para a tela de checkout
 
     Cenário: Usuário inexistente
-    Quando eu digitar o usuário "pedrinhomil@gmail.com"
+    Quando digitar o usuário "pedrinhomil@gmail.com"
     E a senha "lucas123"
-    Então deve exibir uma mensagem de alerta "Usuário Inexistente"
+    Então o sistema deve exibir uma mensagem de alerta "Usuário Inexistente"
 
     Cenário: Usuário com senha inválida
-    Quando eu digitar o usuário "pedrinhomil@gmail.com"
+    Quando digitar o usuário "pedrinhomil@gmail.com"
     E a senha "lucas5472"
-    Então deve exibir uma mensagem de alerta "Usuário ou senha inválida"
+    Então o sistema deve exibir uma mensagem de alerta "Usuário ou senha inválida"
 
     Esquema do Cenário: Autenticar multiplos usuários
-    Quando eu digitar o <usuario>
+    Quando digitar o <usuario>
     E a <senha>
-    Então deve encaminhar a tela de chekout
+    Então o sistema deve encaminhar a tela de chekout
 
     Exemplos:
     | usuario                    | senha       |
